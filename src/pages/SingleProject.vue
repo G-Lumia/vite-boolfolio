@@ -1,4 +1,5 @@
 <template>
+    <div class="wrapper">
         <div v-if="project" class="card p-3">
                         <div class="card-title">
                             <h3>{{ project.name }}</h3>
@@ -22,9 +23,10 @@
                             </div>
                         </div>
         </div>
-        <div v-else>
+        <div v-else class="d-flex justify-content-center" heigth="10000">
             <LoaderApp />
         </div>
+    </div>
 </template>
 
 <script>
